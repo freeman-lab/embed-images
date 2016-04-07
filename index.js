@@ -2,6 +2,7 @@ var fs = require('fs')
 
 module.exports = function (input, output, cb) {
   fs.readFile(input, function (err, data) {
+    if (err && cb) return cb(err)
     var original = String(data)
     var converted = String(data)
     original.split('\n').forEach(function (line) {
