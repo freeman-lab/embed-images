@@ -44,13 +44,13 @@ You'll get
 
 ## use as a module
 
-Just provide an input markdown file
+Just provide filenames for input and output.
 
 ```javascript
 require('embed-images')(input, output)
 ```
 
-Where `input` and `output` are strings with filenames. If you don't specify an output the result will be logged to stdout.
+If you don't specify an output the result will be logged to stdout.
 
 ## use as a cli
 
