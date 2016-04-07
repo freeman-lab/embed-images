@@ -1,6 +1,6 @@
 var fs = require('fs')
 
-module.exports = function (input, output) {
+module.exports = function (input, output, cb) {
   fs.readFile(input, function (err, data) {
     var original = String(data)
     var converted = String(data)
@@ -13,7 +13,10 @@ module.exports = function (input, output) {
         converted = converted.replace(line, insert)
       }
     })
-    if (output) fs.writeFileSync(output, converted)
+    if (output) fs.writeFile(output, converted, function (err, data) {
+      if (err && cb) return cb(err)
+      if (cb) return cb()
+    })
     else console.log(converted)
   })
 }

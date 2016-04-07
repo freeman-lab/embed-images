@@ -44,17 +44,17 @@ You'll get
 
 ## use as a module
 
-Just provide filenames for input and output.
+Just provide filenames for input and output and an optional callback.
 
 ```javascript
-require('embed-images')(input, output)
+require('embed-images')(input, output, cb)
 ```
 
 If you don't specify an output the result will be logged to stdout.
 
 ## use as a cli
 
-You can specify an input and pipe to stdout
+Just specify an input and pipe to stdout
 
 ```bash
 embed-images input.md > output.md
