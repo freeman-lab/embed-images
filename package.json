@@ -1,6 +1,6 @@
 {
   "name": "embed-images",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "embed markdown image files as base64",
   "main": "index.js",
   "scripts": {
