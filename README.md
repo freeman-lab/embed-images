@@ -1,8 +1,11 @@
 # embed-images
 
+[![NPM version][npm-image]][npm-url]
+[![js-standard-style][standard-image]][standard-url]
+
 > replace image files in markdown with base64
 
-Takes a markdown file with images referenced by file and embeds the image content as base64. Useful when you want to render standalone markdown files without serving or hosting individual image files.
+Takes a markdown file with images referenced by file and embeds the image content as base64. Useful if you want to render standalone markdown files without serving or hosting individual image files. Currently only handles `png` files.
 
 ## install
 
@@ -65,3 +68,12 @@ Or specify an output file
 ```bash
 embed-images input.md -o output.md
 ```
+
+## license
+
+[MIT](LICENSE)
+
+[npm-image]: https://img.shields.io/badge/npm-v1.0.0-lightgray.svg?style=flat-square
+[npm-url]: https://npmjs.org/package/embed-images
+[standard-image]: https://img.shields.io/badge/code%20style-standard-lightgray.svg?style=flat-square
+[standard-url]: https://github.com/feross/standard

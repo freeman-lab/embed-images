@@ -13,7 +13,7 @@ var argv = minimist(process.argv.slice(2), {
 
 var usage = `
 Usage:
-  embed-images {input} -o {output.md}
+  embed-images <input> -o <output.md>
 
 Options:
   --output, -o       Output file
@@ -26,7 +26,7 @@ if (argv.help) {
 }
 
 if (!argv._[0]) {
-  console.log('\nError:\ninput file is required')
+  error('input file is required')
   process.exit()
 }
 
@@ -35,3 +35,7 @@ var output = argv.output
 
 if (output) embed(input, output)
 else embed(input)
+
+function error (message) {
+  console.log('[' + chalk.red('error') + '] ' + message)
+}

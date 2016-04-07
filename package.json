@@ -6,6 +6,9 @@
   "scripts": {
     "test": "node test.js | tap-spec"
   },
+  "bin": {
+    "embed-images": "cli.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/freeman-lab/embed-images.git"
