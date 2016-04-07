@@ -5,7 +5,7 @@
 
 > replace image files in markdown with base64
 
-Takes a markdown file with images referenced by file and embeds the image content as base64. Useful if you want to render standalone markdown files without serving or hosting individual image files. Currently only handles `png` files.
+Takes a markdown file with images referenced by file and embeds the image content as `base64`. Useful if you want to render standalone markdown files without serving or hosting individual image files. Currently only handles `png` files.
 
 ## install
 
