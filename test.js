@@ -6,6 +6,7 @@ test('embedding', function (t) {
   embed('example.md', 'output.md', function () {
     fs.readFile('output.md', function (err) {
       t.ok(!err, 'file written')
+      fs.unlink('output.md')
       t.end()
     })
   })
