@@ -1,0 +1,33 @@
+{
+  "name": "embed-images",
+  "version": "1.0.0",
+  "description": "embed markdown image files as base64",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js | tap-spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/freeman-lab/embed-images.git"
+  },
+  "keywords": [
+    "markdown",
+    "images",
+    "base64",
+    "embed"
+  ],
+  "author": "freeman-lab",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/freeman-lab/embed-images/issues"
+  },
+  "homepage": "https://github.com/freeman-lab/embed-images#readme",
+  "devDependencies": {
+    "tap-spec": "^4.1.1",
+    "tape": "^4.5.1"
+  },
+  "dependencies": {
+    "chalk": "^1.1.3",
+    "minimist": "^1.2.0"
+  }
+}
