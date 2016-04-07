@@ -3,7 +3,7 @@
 [![NPM version][npm-image]][npm-url]
 [![js-standard-style][standard-image]][standard-url]
 
-> replace image files in markdown with base64
+> embed image files in markdown as base64
 
 Takes a markdown file with images referenced by file and embeds the image content as `base64`. Useful if you want to render standalone markdown files without serving or hosting individual image files. Currently only handles `png` files.
 
